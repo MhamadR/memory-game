@@ -34,3 +34,10 @@ function hideCards() {
   firstCard.classList.add("hide");
   secondCard.classList.add("hide");
 }
+
+function unflipCards() {
+  setTimeout(() => {
+    firstCard.classList.remove("flip");
+    secondCard.classList.remove("flip");
+  }, 1000);
+}
