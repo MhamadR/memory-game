@@ -21,3 +21,8 @@ function flipCard() {
   hasFlippedCard = false;
   checkForMatch();
 }
+
+function hideCards() {
+  firstCard.classList.add("hide");
+  secondCard.classList.add("hide");
+}
