@@ -22,6 +22,14 @@ function flipCard() {
   checkForMatch();
 }
 
+function checkForMatch() {
+  let isMatch = firstCard.dataset.language === secondCard.dataset.language;
+  isMatch ? hideCards() : unflipCards();
+  isMatch
+    ? (result.innerText = ` Score: ${++score}`)
+    : (result.innerText = `Score = ${--score}`);
+}
+
 function hideCards() {
   firstCard.classList.add("hide");
   secondCard.classList.add("hide");
